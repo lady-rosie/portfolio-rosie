@@ -34,6 +34,10 @@ const Banner = () => {
             <span><FontAwesomeIcon icon="arrow-down"/> </span>
         </div>
     </div>
+    <div className="fixed-title">
+      Welcome
+      <div className="separetor"></div>
+      </div>
 </div>
     )
 }

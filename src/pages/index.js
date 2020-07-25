@@ -6,6 +6,7 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import Header from "../components/header"
 import Banner from "../components/banner"
+import About from "../components/about"
 
 library.add(fab, faLinkedin, faGithub, faArrowDown)
 
@@ -13,6 +14,7 @@ const IndexPage = () => (
   <div>
     <Header />
     <Banner />
+    <About />
   </div>
 )
 

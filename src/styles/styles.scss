@@ -177,5 +177,31 @@ button{
           transform: translateY(-15px);
         }
       }
+    .fixed-title{
+        font-size: 64px;
+        top: 30%;
+        right: -19px;
+        position: absolute;
+        transform: rotate(90deg);
+    }
+}
 
+// about section
+.about{
+    .container{
+        .about-text{
+            h2{
+                font-family: $header-font;
+                font-size: 50px;
+                font-weight: 300;
+                color: $dark-green;
+                box-shadow: inset 0 38px 0 #fff, inset 0 62px 0 $light-green;
+                padding-left: 10px;
+            }
+            p{
+                font-family: $body-font;
+            }
+
+        }
+    }
 }
