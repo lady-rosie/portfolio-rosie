@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphl, Link } from "gatsby"
 import Img from "gatsby-image"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Banner = () => {
     const data = useStaticQuery(graphql`
@@ -29,8 +30,8 @@ const Banner = () => {
                 <Img fluid={data.placeholderImage.childImageSharp.fluid} />
             </div>
         </div>
-        <div className="scroll">
-            <span>Scroll</span>
+        <div className="scroll-arrow bounce">
+            <span><FontAwesomeIcon icon="arrow-down"/> </span>
         </div>
     </div>
 </div>
