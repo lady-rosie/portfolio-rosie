@@ -73,11 +73,11 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: $light-green;
+        background-color: $white;
         width: 50%;
         height: 100%;
         .separetor{
-            background-color: $white;
+            background-color: $light-green;
             height: 5px;
             width: 80%;
         }
@@ -85,7 +85,7 @@ header{
             margin-right: 40px;
             a{
                 text-decoration: none;
-                color: white;
+                color: $light-green;
                 font-size: 30px;
             }
            
@@ -125,11 +125,11 @@ button{
     .presentation{
         display: flex;
         align-items: center;
-        justify-content: space-between;
         position: relative;
         font-family: $body-font;
         .main-text{
             padding-right: 30px;
+            width: 50%;
             h1{
                 font-family: $header-font;
                 font-weight: 300;
@@ -151,6 +151,10 @@ button{
         }
         .main-picture{
             width: 50%;
+            .gatsby-image-wrapper{
+                width: 400px;
+                border-radius: 16px;
+            }
         }
         
     }
@@ -208,7 +212,7 @@ button{
 
 // technical skills section
 .technical-skills{
-    height: 40vh;
+    margin-bottom: 50px;
     .container{
     .technical-skills-title{
         h3{
@@ -221,7 +225,6 @@ button{
         }
 
     }
-
     }
 
 }
@@ -243,20 +246,70 @@ button{
         }
     }
 }
+//projects section home page
+.projects-section{
+    padding: 20px 0;
+    background-color: $light-green;
+    .project-content{
+        h2{
+            font-family: $header-font;
+            font-size: 50px;
+            font-weight: 300;
+            color: $dark-green;
+        }
+    }
+    .projects-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+    .project{
+        width: 400px;
+        border-radius: 8px;
+        box-shadow: 10px 10px 5px 0px rgba(87, 85, 85, 0.75);
+       
+        .gatsby-image-wrapper{
+            width: 100%;
+            border-radius: 8px;
+        }
+    
+    }
+}
+
 // project button
 .project-button{
     display: flex;
-    align-items: baseline;
-    justify-content:flex-end;
-    h2{
-        font-family: $header-font;
-        font-size: 50px;
-        font-weight: 300;
+    align-items: center;
+    justify-content: flex-end;
+    p{
+        font-size: 30px;
         color: $dark-green;
     }
     span{
         color: $orange;
         font-size: 50px;
         margin-left: 20px;
+    }
+}
+footer{
+    width: 100%;
+    padding: 20px 0;
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        a{
+            font-family: $body-font;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+       .social-links{
+        margin-right: 40px;
+        a{
+            text-decoration: none;
+            color: $light-green;
+            font-size: 30px;
+        }
+       } 
     }
 }

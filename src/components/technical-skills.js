@@ -11,10 +11,6 @@ const TechnicalSkills = () => {
           <h3>Technical skills</h3>
         </div>
           <Stack />
-          <div className="project-button">
-            <h2>Projects</h2>
-            <span><FontAwesomeIcon icon="arrow-right"/></span>
-          </div>
     </div>
 </div>
     )
