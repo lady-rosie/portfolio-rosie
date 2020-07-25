@@ -205,3 +205,58 @@ button{
         }
     }
 }
+
+// technical skills section
+.technical-skills{
+    height: 40vh;
+    .container{
+    .technical-skills-title{
+        h3{
+
+            font-family: $header-font;
+            font-size: 30px;
+            font-weight: 300;
+            color: $dark-green;
+            text-align: left;
+        }
+
+    }
+
+    }
+
+}
+// stack
+.stack-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .stack{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .gatsby-image-wrapper{
+            width: 50%;
+        }
+        p{
+            font-family: $body-font;
+        }
+    }
+}
+// project button
+.project-button{
+    display: flex;
+    align-items: baseline;
+    justify-content:flex-end;
+    h2{
+        font-family: $header-font;
+        font-size: 50px;
+        font-weight: 300;
+        color: $dark-green;
+    }
+    span{
+        color: $orange;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+}
