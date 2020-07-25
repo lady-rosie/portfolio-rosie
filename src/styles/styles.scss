@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;600&display=swap');
+
+$body-font: "Poppins";
+$header-font: "Lora";
+
+//colors
+$white: #FFFF;
+$black:rgb(0, 0, 0); 
+$dark-green:#2A4933;
+$light-green: #DBEFE1;
+$orange: #F48668;
+
+html, body {
+    font-size: 16px;
+}
+
+
+.container{
+    width: 1640px;
+    min-width: 1640px;
+    margin: 0 auto;
+    @media(max-width: 1440px){
+        width: 1280px;
+    min-width: 1280px;
+    }
+    @media(max-width: 1280px){
+        width: 976px;
+    min-width: 976px;
+    }
+    @media(max-width: 976px){
+        width: 768px;
+    min-width: 768px;
+    }
+}
+// header style
+header{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        .logo{
+             font-family: $header-font;
+           a{
+                text-decoration: none;
+                color: $dark-green;
+           } 
+        }
+        .navigation{
+            nav{
+                font-family: $body-font;
+                a{
+                    text-decoration: none;
+                    color: $black;
+                    margin: 0 20px;
+                }
+            }
+
+        }
+     
+    }
+
+}
