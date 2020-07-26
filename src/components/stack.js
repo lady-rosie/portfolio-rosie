@@ -13,6 +13,62 @@ const Stack = ()=> {
           }
         }
       }
+      railsLogo: file(relativePath: { eq: "Ruby_On_Rails_Logo.svg.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
     return(
@@ -22,40 +78,40 @@ const Stack = ()=> {
                 <p>Html5</p>
             </div>
             <div className="stack">
-                <Img fluid={data.htmlLogo.childImageSharp.fluid} />
-                <p>Html5</p>
+                <Img fluid={data.railsLogo.childImageSharp.fluid} />
+                <p>CSS3</p>
             </div>
             <div className="stack">
                 <Img fluid={data.htmlLogo.childImageSharp.fluid} />
-                <p>Html5</p>
+                <p>JavaScript ES6</p>
             </div>
             <div className="stack">
                 <Img fluid={data.htmlLogo.childImageSharp.fluid} />
-                <p>Html5</p>
+                <p>React</p>
             </div>
             <div className="stack">
                 <Img fluid={data.htmlLogo.childImageSharp.fluid} />
-                <p>Html5</p>
+                <p>Ruby on Rails</p>
             </div>
             <div className="stack">
                 <Img fluid={data.htmlLogo.childImageSharp.fluid} />
-                <p>Html5</p>
+                <p>Bootstrap</p>
             </div>
             <div className="stack">
                 <Img fluid={data.htmlLogo.childImageSharp.fluid} />
-                <p>Html5</p>
+                <p>Figma</p>
             </div>
             <div className="stack">
                 <Img fluid={data.htmlLogo.childImageSharp.fluid} />
-                <p>Html5</p>
+                <p>Sass</p>
             </div>
             <div className="stack">
                 <Img fluid={data.htmlLogo.childImageSharp.fluid} />
-                <p>Html5</p>
+                <p>Git & Github</p>
             </div>
             <div className="stack">
                 <Img fluid={data.htmlLogo.childImageSharp.fluid} />
-                <p>Html5</p>
+                <p>PostgreSQL</p>
             </div>
         </div>
     )

@@ -7,7 +7,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Projects = () => {
     const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "Les-petits-classique.png" }) {
+      lesClassiques: file(relativePath: { eq: "Les-petits-classique.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      cocktailA: file(relativePath: { eq: "Cocktail-advisor.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -23,16 +30,16 @@ const Projects = () => {
                     <h2>Projects</h2>
                     <div className="projects-list">
                         <div className="project">
-                            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                            <Img fluid={data.lesClassiques.childImageSharp.fluid} />
                         </div>
                         <div className="project">
-                            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                            <Img fluid={data.cocktailA.childImageSharp.fluid} />
                         </div>
                         <div className="project">
-                            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                            <Img fluid={data.cocktailA.childImageSharp.fluid} />
                         </div>
                         <div className="project">
-                            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                            <Img fluid={data.cocktailA.childImageSharp.fluid} />
                         </div>
                     </div>
                     <div className="project-button">

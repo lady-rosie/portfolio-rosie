@@ -20,7 +20,7 @@ const Banner = () => {
     <div className="container">
         <div className="presentation">
             <div className="main-text">
-                    <h1>Hi, I'm Rose Grondin</h1>
+                    <h1>Hello! </h1>
                     <span>Front-end developer</span>
                     <p>Recently completed a 9-week full stack web developement course, I’m seeking new projects to work on.</p>
                     <p>email: <Link to="mailto:rose.grondin@gmail.com">rose.grondin@gmail.com</Link></p>
@@ -34,10 +34,6 @@ const Banner = () => {
             <span><FontAwesomeIcon icon="arrow-down"/> </span>
         </div>
     </div>
-    <div className="fixed-title">
-      Welcome
-      <div className="separetor"></div>
-      </div>
 </div>
     )
 }
