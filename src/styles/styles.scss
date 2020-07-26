@@ -309,3 +309,51 @@ footer{
        } 
     }
 }
+// project page styling
+.project{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    .container{
+        .project-card{
+            display: flex;
+            align-items: center;
+            .project-image{
+                .gatsby-image-wrapper{
+                    width: 400px;
+                    border-radius: 8px;
+                }
+
+            }
+            .project-content{
+                margin-left: 50px;
+                h2{
+                    font-family: $header-font;
+                    color: $charcoal-blue;
+                }
+                p{
+                    font-family: $body-font;
+                }
+                .tools-icons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    .gatsby-image-wrapper{
+                        width: 30px;
+                    }
+                    .project-links{
+                        a{
+                            font-family: $body-font;
+                            text-decoration: underline;
+                            margin-left: 10px;
+                        }
+                    }
+    
+                }
+
+            }
+
+        }
+    }
+}
