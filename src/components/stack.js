@@ -13,56 +13,63 @@ const Stack = ()=> {
           }
         }
       }
-      railsLogo: file(relativePath: { eq: "Ruby_On_Rails_Logo.svg.png" }) {
+      rubyLogo: file(relativePath: { eq: "ruby_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+      cssLogo: file(relativePath: { eq: "CSS3_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+      figmaLogo: file(relativePath: { eq: "Figma-1-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+      bootstrapLogo: file(relativePath: { eq: "Bootstrap_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+      jsLogo: file(relativePath: { eq: "JavaScript-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+      reactLogo: file(relativePath: { eq: "React-icon.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+      sassLogo: file(relativePath: { eq: "Sass_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      htmlLogo: file(relativePath: { eq: "HTML5_logo.png" }) {
+      postgresLogo: file(relativePath: { eq: "Postgresql.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      gitLogo: file(relativePath: { eq: "Git_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -78,39 +85,39 @@ const Stack = ()=> {
                 <p>Html5</p>
             </div>
             <div className="stack">
-                <Img fluid={data.railsLogo.childImageSharp.fluid} />
+                <Img fluid={data.cssLogo.childImageSharp.fluid} />
                 <p>CSS3</p>
             </div>
             <div className="stack">
-                <Img fluid={data.htmlLogo.childImageSharp.fluid} />
+                <Img fluid={data.jsLogo.childImageSharp.fluid} />
                 <p>JavaScript ES6</p>
             </div>
             <div className="stack">
-                <Img fluid={data.htmlLogo.childImageSharp.fluid} />
+                <Img fluid={data.reactLogo.childImageSharp.fluid} />
                 <p>React</p>
             </div>
             <div className="stack">
-                <Img fluid={data.htmlLogo.childImageSharp.fluid} />
+                <Img fluid={data.rubyLogo.childImageSharp.fluid} />
                 <p>Ruby on Rails</p>
             </div>
             <div className="stack">
-                <Img fluid={data.htmlLogo.childImageSharp.fluid} />
+                <Img fluid={data.bootstrapLogo.childImageSharp.fluid} />
                 <p>Bootstrap</p>
             </div>
             <div className="stack">
-                <Img fluid={data.htmlLogo.childImageSharp.fluid} />
+                <Img fluid={data.figmaLogo.childImageSharp.fluid} />
                 <p>Figma</p>
             </div>
             <div className="stack">
-                <Img fluid={data.htmlLogo.childImageSharp.fluid} />
+                <Img fluid={data.sassLogo.childImageSharp.fluid} />
                 <p>Sass</p>
             </div>
             <div className="stack">
-                <Img fluid={data.htmlLogo.childImageSharp.fluid} />
+                <Img fluid={data.gitLogo.childImageSharp.fluid} />
                 <p>Git & Github</p>
             </div>
             <div className="stack">
-                <Img fluid={data.htmlLogo.childImageSharp.fluid} />
+                <Img fluid={data.postgresLogo.childImageSharp.fluid} />
                 <p>PostgreSQL</p>
             </div>
         </div>

@@ -13,10 +13,17 @@ const Project = () => {
           }
         }
       }
+      figmaLogo: file(relativePath: { eq: "Figma-1-logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
     return (
-<div className="project">
+<div className="project-page">
     <div className="container">
       <div className="project-card">
         <div className="project-image">
@@ -26,7 +33,82 @@ const Project = () => {
           <h2>Name of the project</h2>
           <p>This is a project a made about ...</p>
           <div className="tools-icons"> 
-            <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+            <Img fluid={data.figmaLogo.childImageSharp.fluid} />
+            <div className="project-links">
+              <Link>See figma</Link>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-card">
+        <div className="project-image">
+          <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+        </div>
+        <div className="project-content">
+          <h2>Name of the project</h2>
+          <p>This is a project a made about ...</p>
+          <div className="tools-icons"> 
+            <Img fluid={data.figmaLogo.childImageSharp.fluid} />
+            <div className="project-links">
+              <Link>See figma</Link>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-card">
+        <div className="project-image">
+          <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+        </div>
+        <div className="project-content">
+          <h2>Name of the project</h2>
+          <p>This is a project a made about ...</p>
+          <div className="tools-icons"> 
+            <Img fluid={data.figmaLogo.childImageSharp.fluid} />
+            <div className="project-links">
+              <Link>See figma</Link>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-card">
+        <div className="project-image">
+          <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+        </div>
+        <div className="project-content">
+          <h2>Name of the project</h2>
+          <p>This is a project a made about ...</p>
+          <div className="tools-icons"> 
+            <Img fluid={data.figmaLogo.childImageSharp.fluid} />
+            <div className="project-links">
+              <Link>See figma</Link>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-card">
+        <div className="project-image">
+          <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+        </div>
+        <div className="project-content">
+          <h2>Name of the project</h2>
+          <p>This is a project a made about ...</p>
+          <div className="tools-icons"> 
+            <Img fluid={data.figmaLogo.childImageSharp.fluid} />
+            <div className="project-links">
+              <Link>See figma</Link>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div className="project-card">
+        <div className="project-image">
+          <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+        </div>
+        <div className="project-content">
+          <h2>Name of the project</h2>
+          <p>This is a project a made about ...</p>
+          <div className="tools-icons"> 
+            <Img fluid={data.figmaLogo.childImageSharp.fluid} />
             <div className="project-links">
               <Link>See figma</Link>
               </div>

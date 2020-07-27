@@ -4,7 +4,7 @@ $body-font: "Raleway";
 $header-font: "Courgette";
 
 //colors
-$white: #F0F7F4;
+$white: #FFFFFF;
 $black:rgb(0, 0, 0); 
 $charcoal-blue:#465775;
 $light-green: #DBEFE1;
@@ -65,6 +65,11 @@ header{
                     text-decoration: none;
                     color: $black;
                     margin: 0 20px;
+                    padding: 0 10px;
+                    &:hover{
+                        // border-bottom: 5px solid $charcoal-blue;
+                        box-shadow: inset 0 10px 0 #FFFFFF, inset 0 18px 0 #DBEFE1;
+                    }
                 }
             }
 
@@ -226,7 +231,7 @@ button{
 // stack
 .stack-logos{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-evenly;
     flex-wrap: wrap;
     .stack{
@@ -235,6 +240,11 @@ button{
         align-items: center;
         .gatsby-image-wrapper{
             width: 100%;
+            picture{
+                img{
+                    width: 40px;   
+                   }
+            }
         }
         p{
             font-family: $body-font;
@@ -287,6 +297,7 @@ button{
         margin-left: 20px;
     }
 }
+//footer design
 footer{
     width: 100%;
     padding: 20px 0;
@@ -310,19 +321,21 @@ footer{
     }
 }
 // project page styling
-.project{
+.project-page{
     display: flex;
     align-items: center;
     position: relative;
-    height: 100vh;
+    padding-top: 200px;
     .container{
         .project-card{
             display: flex;
             align-items: center;
+            margin: 40px 0;
             .project-image{
                 .gatsby-image-wrapper{
                     width: 400px;
                     border-radius: 8px;
+                    box-shadow: 10px 10px 5px 0px rgba(87, 85, 85, 0.75);
                 }
 
             }
