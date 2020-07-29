@@ -20,6 +20,41 @@ const Project = () => {
           }
         }
       }
+      cocktailA: file(relativePath: { eq: "Cocktail-advisor.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      greenThumb: file(relativePath: { eq: "Greenthumb-project.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      stellactica: file(relativePath: { eq: "Mockup-stellactica.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      marie: file(relativePath: { eq: "Mockup-Marie.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      isabelle: file(relativePath: { eq: "Mockup-isabelleduvert.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
     return (
@@ -42,7 +77,7 @@ const Project = () => {
       </div>
       <div className="project-card">
         <div className="project-image">
-          <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+          <Img fluid={data.cocktailA.childImageSharp.fluid} />
         </div>
         <div className="project-content">
           <h2>Name of the project</h2>
@@ -57,7 +92,7 @@ const Project = () => {
       </div>
       <div className="project-card">
         <div className="project-image">
-          <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+          <Img fluid={data.greenThumb.childImageSharp.fluid} />
         </div>
         <div className="project-content">
           <h2>Name of the project</h2>
@@ -72,7 +107,7 @@ const Project = () => {
       </div>
       <div className="project-card">
         <div className="project-image">
-          <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+          <Img fluid={data.stellactica.childImageSharp.fluid} />
         </div>
         <div className="project-content">
           <h2>Name of the project</h2>
@@ -87,7 +122,7 @@ const Project = () => {
       </div>
       <div className="project-card">
         <div className="project-image">
-          <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+          <Img fluid={data.marie.childImageSharp.fluid} />
         </div>
         <div className="project-content">
           <h2>Name of the project</h2>
@@ -102,7 +137,7 @@ const Project = () => {
       </div>
       <div className="project-card">
         <div className="project-image">
-          <Img fluid={data.lesClassiques.childImageSharp.fluid} />
+          <Img fluid={data.isabelle.childImageSharp.fluid} />
         </div>
         <div className="project-content">
           <h2>Name of the project</h2>

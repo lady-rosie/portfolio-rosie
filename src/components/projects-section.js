@@ -21,6 +21,20 @@ const Projects = () => {
           }
         }
       }
+      greenThumb: file(relativePath: { eq: "Greenthumb-project.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      stellactica: file(relativePath: { eq: "Mockup-stellactica.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
     return(
@@ -36,10 +50,10 @@ const Projects = () => {
                             <Img fluid={data.cocktailA.childImageSharp.fluid} />
                         </div>
                         <div className="project">
-                            <Img fluid={data.cocktailA.childImageSharp.fluid} />
+                            <Img fluid={data.greenThumb.childImageSharp.fluid} />
                         </div>
                         <div className="project">
-                            <Img fluid={data.cocktailA.childImageSharp.fluid} />
+                            <Img fluid={data.stellactica.childImageSharp.fluid} />
                         </div>
                     </div>
                     <div className="project-button">
